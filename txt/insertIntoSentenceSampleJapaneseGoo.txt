@@ -1,0 +1,8 @@
+INSERT INTO sentence_sample VALUES (1, (SELECT id from yojijukugo where word = '試行錯誤'), 'Error: name ''example_elements'' is not defined');
+INSERT INTO sentence_sample VALUES (1, (SELECT id from yojijukugo where word = '韋編三絶'), 'Error: name ''example_elements'' is not defined');
+INSERT INTO sentence_sample VALUES (1, (SELECT id from yojijukugo where word = '不老不死'), 'Error: name ''example_elements'' is not defined');
+INSERT INTO sentence_sample VALUES (1, (SELECT id from yojijukugo where word = '益者三友'), 'Error: name ''example_elements'' is not defined');
+INSERT INTO sentence_sample VALUES (1, (SELECT id from yojijukugo where word = '人事不省'), 'Error: name ''example_elements'' is not defined');
+INSERT INTO sentence_sample VALUES (1, (SELECT id from yojijukugo where word = '不承不承'), 'Error: name ''example_elements'' is not defined');
+INSERT INTO sentence_sample VALUES (1, (SELECT id from yojijukugo where word = '論功行賞'), 'Error: name ''example_elements'' is not defined');
+INSERT INTO sentence_sample VALUES (1, (SELECT id from yojijukugo where word = '猪突猛進'), 'Error: name ''example_elements'' is not defined');

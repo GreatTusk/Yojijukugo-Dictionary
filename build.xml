@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Yojijukugo_Dictionary" default="default" basedir=".">
+    <description>Builds, tests, and runs the project Yojijukugo Dictionary.</description>
+
+    <!-- Define properties -->
+    <property name="src.dir" location="src"/>
+    <property name="build.dir" location="build"/>
+
+    <target name="-pre-jar">
+        <!-- Copy only resources from src/main/resources -->
+        <copy todir="${build.classes.dir}">
+            <fileset dir="main/resources"/>
+        </copy>
+    </target>
+    
+    <!-- Import the default NetBeans build script -->
+    <import file="nbproject/build-impl.xml"/>
+
+    <!-- Your additional configurations and overrides go here -->
+     <target name="-post-jar">
+        <jar destfile="${dist.jar}"
+             update="true">
+            <restrict> 
+                <archives>
+                   <zips>
+                       <fileset dir="${dist.dir}" includes="lib/*.jar"/>
+                   </zips>
+                </archives>
+            </restrict>
+        </jar>
+    </target>
+    
+</project>
